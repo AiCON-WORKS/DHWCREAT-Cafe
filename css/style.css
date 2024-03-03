@@ -1,0 +1,537 @@
+@charset "UTF-8";
+
+html {
+  font-size: 62.5%;
+  /* 16px * 62.5% = 10px */
+  scroll-behavior: smooth;
+}
+
+body {
+  color: #333;
+  font-family: "游ゴシック体", YuGothic, "游ゴシック", "Yu Gothic", "メイリオ", sans-serif;
+  font-weight: 500;
+  font-size: 1.6em;
+  line-height: 2.4rem;
+  text-align: center;
+}
+
+h2 {
+  font-size: 2.4rem;
+}
+
+h3 {
+  font-size: 2.0rem;
+}
+
+a:hover {
+  opacity: 0.5;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.header {
+  display: block;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 16px;
+  height: auto;
+  background-color: #FFF;
+}
+
+.header h1 {
+  text-align: left;
+  font-size: 24px;
+  color: #333;
+}
+
+.header_nav ul {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  padding-top: 8px;
+}
+
+.header ul li {
+  font-size: 16px;
+}
+
+.header ul li a {
+  text-align: left;
+}
+
+.header ul li a:visited {
+  color: #333;
+}
+
+.header ul li a:active {
+  color: #333;
+}
+
+@media(min-width:480px) {
+  .header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    max-width: 1040px;
+    margin: 0 auto;
+    min-height: 50px;
+    padding: 16px;
+    box-sizing: border-box;
+  }
+
+  .header_nav ul {
+    padding-top: 0;
+  }
+
+  .header_nav ul li {
+    margin-left: 24px;
+  }
+}
+
+.main {
+  background-color: #f6f8f9;
+}
+
+@media(min-width:480px) {
+  main {
+    padding-bottom: 120px;
+  }
+}
+
+.section-top {
+  margin-bottom: 60px;
+}
+
+.section-top__image {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+@media (min-width:480px) {
+  .section-top__image {
+    height: 600px;
+    margin-bottom: 20px;
+  }
+}
+
+.section-concept {
+  padding: 60px 35px;
+}
+
+.section-concept h2 {
+  padding: 40px 0;
+}
+
+.section-concept p {
+  text-align: center;
+  font-weight: bold;
+  line-height: 1.5;
+}
+
+@media (min-width:480px) {
+  .section-concept {
+    padding: 60px 36px;
+    margin: 0 auto 60px;
+    max-width: 1040px;
+  }
+
+  .section-concept p {
+    text-align: center;
+    font-weight: 600;
+  }
+}
+
+.section-menu {
+  margin: 80px auto 80px;
+  max-width: 1040px;
+}
+
+.section-menu h2 {
+  padding: 40px 0;
+}
+
+.section-menu ul {
+  margin: 0 24px;
+  list-style: none;
+  display: block;
+  flex-direction: column;
+
+}
+
+.section-menu ul li {
+  width: 327px;
+  margin: 0 auto;
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+.section-menu ul li a {
+  text-decoration: none;
+  color: #333;
+
+}
+
+.section-menu__item-picture {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  object-position: center;
+}
+
+.section-menu__item-title {
+  padding: 14px 20px;
+}
+
+@media(min-width:1040px) {
+  .section-menu {
+    margin-bottom: 20px
+  }
+
+  .section-menu h2 {
+    padding: 40px 0;
+  }
+
+  .section-menu ul {
+    /* max-width: 1040px; */
+    padding: 0;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .section-menu ul li {
+    display: inline-block;
+    /* width: 320px;
+    margin-right: 40px; */
+  }
+
+  .section-menu ul li:last-child {
+    margin-right: 0;
+  }
+}
+
+.section-foods,
+.section-sweets,
+.section-drinks,
+.section-access {
+  background-color: rgb(231, 224, 213);
+  padding-top: 0;
+  padding-bottom: 60px;
+  margin-top: 20px;
+  /* margin-bottom: 80px; */
+}
+
+.section-foods h2,
+.section-sweets h2,
+.section-drinks h2 {
+  padding-top: 60px;
+  margin-bottom: 40px;
+}
+
+.section-foods ul,
+.section-sweets ul,
+.section-drinks ul {
+  list-style: none;
+}
+
+.section-foods ul li,
+.section-sweets ul li,
+.section-drinks ul li {
+  display: inline-block;
+  text-align: left;
+  margin-right: 15px;
+}
+
+.section-foods_price,
+.section-sweets_price,
+.section-drinks__hotdrinks-price,
+.section-drinks__colddrinks-price,
+.section-drinks__alcohole-price {
+  position: relative;
+  margin-left: 25px;
+}
+
+@media (min-width:1040px) {
+  .section-foods {
+    padding: 60px 36px;
+    margin: 0 auto 60px;
+    max-width: 1040px;
+    box-sizing: border-box;
+    text-decoration: none;
+  }
+
+  .section-foods h2 {
+    padding-bottom: 40px;
+    border-bottom: solid 1px #333;
+    margin-bottom: 30px;
+  }
+}
+
+@media (min-width:1040px) {
+  .section-sweets {
+    padding: 60px 36px;
+    margin: 0 auto 60px;
+    max-width: 1040px;
+    box-sizing: border-box;
+    text-decoration: none;
+  }
+
+  .section-sweets h2 {
+    padding-bottom: 40px;
+    border-bottom: solid 1px #333;
+    margin-bottom: 30px;
+  }
+}
+
+.section-drinks h3 {
+  padding: 20px 0;
+}
+
+.section-drinks__hotdrinks,
+.section-drinks__colddrinks,
+.section-drinks__alchole {
+  margin-bottom: 40px;
+}
+
+@media (min-width:1040px) {
+  .section-drinks {
+    padding: 60px 36px;
+    margin: 0 auto 60px;
+    max-width: 1040px;
+    box-sizing: border-box;
+    text-decoration: none;
+  }
+
+  .section-drinks h2 {
+    padding-bottom: 40px;
+    border-bottom: solid 1px #333;
+    margin-bottom: 30px;
+  }
+}
+
+.section-news {
+  background-color: #FFF;
+  padding-bottom: 60px;
+  color: #333;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.news-columns {
+  width: 100%;
+}
+
+.section-news__visual {
+  object-fit: cover;
+  object-position: center;
+  width: 100%;
+}
+
+.section-news__main-image {
+  width: 100%;
+  height: 480px;
+  object-fit: cover;
+  object-position: center;
+}
+
+.section-news__description {
+  text-align: left;
+  width: 88%;
+  margin: 30px auto;
+}
+
+.section-news h2 {
+  text-align: center;
+  padding: 40px 0 52px;
+}
+
+.section-news ul li {
+  margin-bottom: 40px;
+  text-align: left;
+}
+
+.section-news li time {
+  font-weight: 600;
+}
+
+.section-news li time::after {
+  content: ": "
+}
+
+.section-news h3 {
+  display: inline-block;
+  margin-bottom: 16px;
+}
+
+@media (min-width:1040px) {
+  .section-news {
+    padding: 60px 36px;
+    margin: 0 auto 60px;
+    max-width: 1040px;
+    box-sizing: border-box;
+    text-decoration: none;
+  }
+
+  .news-columns {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  .section-news__visual {
+    width: 45%;
+  }
+
+  .section-news__main-image {
+    height: auto;
+  }
+
+  .section-news__description {
+    width: 55%;
+    padding: 0 64px;
+  }
+
+  .section-news h2 {
+    padding: 0 0 40px;
+    text-align: center;
+  }
+
+}
+
+.section-access {
+  margin-top: 0;
+}
+
+.section-access h2 {
+  padding: 40px;
+}
+
+.section-access address {
+  font-style: normal;
+  margin-bottom: 40px;
+}
+
+.section-access__break:after {
+  content: "\A";
+  white-space: pre;
+}
+
+@media (min-width:1040px) {
+  .section-access {
+    padding: 60px 36px;
+    margin: 0 auto 60px;
+    max-width: 1040px;
+    box-sizing: border-box;
+  }
+
+  .section-access h2 {
+    padding-bottom: 40px;
+    border-bottom: solid 1px #333;
+    margin-bottom: 30px;
+  }
+
+  .section-access address {
+    font-size: 1.8rem;
+    line-height: 2.7rem;
+  }
+
+  .section-access__break:after {
+    content: "";
+  }
+}
+
+.footer {
+  min-height: 228px;
+  background-color: #888;
+  padding-top: 46px;
+  padding-bottom: 20px;
+  font-weight: 600;
+}
+
+.footer__site-map {
+  margin-bottom: 30px;
+}
+
+.footer__site-map h2 {
+  display: none;
+}
+
+.footer__site-map li {
+  margin: 0 10px;
+  display: inline-block;
+}
+
+.footer__site-map li a {
+  text-decoration: none;
+  color: #CAD0D2;
+}
+
+.footer__site-map li a:visited {
+  color: #CAD0D2;
+}
+
+.footer__sns-links {
+  margin-bottom: 80px;
+}
+
+.footer__sns-links li {
+  display: inline-block;
+  width: 20px;
+  margin: 0 20px;
+}
+
+.footer__sns-links li img {
+  width: 100%;
+}
+
+.footer small {
+  color: #FFF;
+}
+
+@media (min-width:1040px) {
+  .footer {
+    margin: 0;
+    padding: 0;
+  }
+
+  .footer__container {
+    max-width: 1040px;
+    margin: 0 auto;
+    padding-top: 40px;
+    text-align: left;
+  }
+
+  .footer__site-map {
+    float: left;
+  }
+
+  .footer__site-map ul {
+    display: inline-block;
+    margin-left: 10px;
+  }
+
+  .footer__site-map ul li {
+    margin: 0;
+    display: block;
+  }
+
+  .footer__sns-links {
+    float: right;
+  }
+
+  .footer small {
+    clear: both;
+    display: block;
+    text-align: center;
+  }
+}
